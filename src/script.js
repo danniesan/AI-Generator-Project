@@ -1,5 +1,4 @@
 function displayAnswer(response) {
-  console.log("name generated");
   new Typewriter("#answer", {
     strings: [response.data.answer],
     autoStart: true,
@@ -19,10 +18,6 @@ function generateAnswer(event) {
   let answerElement = document.querySelector("#answer");
   answerElement.classList.remove("hidden");
   answerElement.innerHTML = `<div class="generate">Generating name about ${instructionsInput.value}</div>`;
-
-  console.log("Gernerating name");
-  console.log(`Prompt:${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayAnswer);
 }
