@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Project</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>AI Name Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="generator-form">
           <input
             type="text"
             placeholder="Enter topic here..."
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="answer">Answer will appear here</div>
+        <div class="answer" id="answer">Answer will appear here</div>
       </main>
 
       <footer>
