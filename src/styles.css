@@ -21,11 +21,15 @@ h1 {
 main {
   margin-bottom: 30px;
 }
-form {
-  padding: 30px;
+.form-container {
   background-color: #fff;
   margin-bottom: 30px;
   border-radius: 5px;
+  padding: 30px;
+  color: #000000;
+}
+form {
+  display: flex;
 }
 .instruction {
   padding: 16px;
@@ -46,6 +50,23 @@ form {
   color: #000000;
   padding: 20px;
 }
+.hidden {
+  display: none;
+}
+.generate {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 17px;

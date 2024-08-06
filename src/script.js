@@ -13,8 +13,12 @@ function generateAnswer(event) {
   let apiKey = "bfb46b3ac41f3bd0tof60adf87306491";
   let context =
     "You are an expert in creating fantasy, mythical and unique names, make sure to follow user instructions.";
-  let prompt = `User instructions: Generate unique fantasy names by gender, boy or girl ${instructionsInput.value}`;
+  let prompt = `User instructions: Generate unique fantasy names by gender, Male or Female ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let answerElement = document.querySelector("#answer");
+  answerElement.classList.remove("hidden");
+  answerElement.innerHTML = `<div class="generate">Generating name about ${instructionsInput.value}</div>`;
 
   console.log("Gernerating name");
   console.log(`Prompt:${prompt}`);

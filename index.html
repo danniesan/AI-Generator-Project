@@ -14,19 +14,22 @@
         <h1>AI Name Generator</h1>
       </header>
       <main>
-        <form id="generator-form">
-          <input
-            type="text"
-            placeholder="Enter topic here..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="answer" id="answer">Answer will appear here</div>
+        <div class="form-container">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter topic here..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="hint">i.e: vampire, werewolf, witch, ogre</small>
+        </div>
+        <div class="answer hidden" id="answer">Answer will appear here</div>
       </main>
 
       <footer>
