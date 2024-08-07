@@ -2,7 +2,7 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/691/original/mayer-1.jpg?1722979018");
 }
 .container {
-  margin: 100px auto;
+  margin: 70px auto;
   max-width: 650px;
   padding: 30px;
 }
