@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Rajdhani:wght@300;400;500;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Eczar:wght@400..800&family=Nanum+Gothic+Coding&family=Rajdhani:wght@300;400;500;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -11,14 +25,14 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI Name Generator</h1>
+        <h1>Short Scary Story Generator</h1>
       </header>
       <main>
         <div class="form-container">
           <form id="generator-form">
             <input
               type="text"
-              placeholder="Enter topic here..."
+              placeholder="Enter a person, place, or thing"
               autofocus
               required
               autocomplete="off"
@@ -27,13 +41,15 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <small class="hint">i.e: vampire, werewolf, witch, ogre</small>
+          <small class="hint"
+            >i.e: Vampire, Dwarves, Sirens, Hospital, or School</small
+          >
         </div>
-        <div class="answer hidden" id="answer">Answer will appear here</div>
+        <div class="answer hidden" id="answer"></div>
       </main>
 
       <footer>
-        Coded by
+        This AI project was coded by
         <a href="https://github.com/danniesan" target="_blank">
           Veronica Sandoval</a
         >
